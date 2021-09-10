@@ -1,0 +1,95 @@
+{% extends 'Home/base.html' %}
+{% load static %}
+{% block content %}
+
+<main class="page project-page">
+        <section class="portfolio-block project">
+            <div class="container">
+                <div class="heading">
+                    <h2>Hostel Management system</h2>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h1 style="font-size: 25px;">Why Hostel Management System ?</h1>
+                        <p>Firstly, In our college, If a student wants to leave campus, They should go through some manual “Requesting for permission” process where a “request form” should be submitted to the caretaker. The caretaker will be checking and contacting the parent for confirmation and then will be issuing a good to go receipt. This receipt should be shown to security during the departure. All these records should also be noted in registers<br></p>
+                        <h1 style="font-size: 20px;">Drawbacks :</h1>
+                        <p>- This is a very long process and used to take a very long time for submitting requests manually during the festival seasons as every student wants to leave campus at once.<br></p>
+                        <p>-&nbsp;Maintaining multiple registers for incoming, outgoing and near security is difficult.<br></p>
+                        <p>-&nbsp;And few loopholes where students can manipulate paper records and not so secure.<br></p>
+                        <h1 style="font-size: 17px;">So, We thought of a solution that is nothing but digitalizing the whole process and named it Hostel management System.<br></h1>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 22px;">
+                    <div class="col">
+                        <h1 style="font-size: 25px;font-weight: bold;">How to use HMS?<br></h1>
+                        <div class="row">
+                            <div class="col align-self-center">
+                                <p>Firstly student needs to login with credentials provided by the college administration( In demo webpage we provided demo account details).<br></p>
+                            </div>
+                            <div class="col align-self-center" style="margin-left: 0px;"><img src="{% static '/images/newpics/point1.PNG' %}"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><img src="{% static '/images/newpics/point2.PNG' %}"></div>
+                            <div class="col">
+                                <p><br>After logging in student needs to fill and submit the form in order to place a request to the respective caretaker.<br><br></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p><br>Caretaker logins with his account( In demo webpage we provided demo account details) and go through requests submitted by several students.<br><br></p>
+                            </div>
+                            <div class="col"><img src="{% static '/images/newpics/point3.PNG' %}"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><img src="{% static '/images/newpics/accept or reject.PNG' %}"></div>
+                            <div class="col">
+                                <p><br>He verifies all the requests placed by talking to the parent/guardian and decides whether to accept or reject the request.<br><br></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p><br><br>If accepted then, A QR code will be generated on the name of the student and will be sent to a particular student. Students can check the “Approved Request” Tab in their account to get the QR code. If Rejected the request will be shown in the “Rejected Request” of Students account.<br><br><br></p>
+                            </div>
+                            <div class="col"><img src="{% static '/images/newpics/approved.PNG' %}"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p style="text-align: center;"><br>The student can use the QR code to check out from college.<br><br></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><img src="{% static '/images/newpics/qrcheck.PNG' %}"></div>
+                            <div class="col">
+                                <p><br>Once the QR code gets scanned, The QR gets activated and shows “Out” on the security page until it gets scanned again on check-in which turns into “In”<br><br></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>Status(In/Out of campus) will be updated in the CareTaker portal.<br></p>
+                            </div>
+                            <div class="col"><img src="{% static '/images/newpics/status.PNG' %}"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><img src="{% static '/images/newpics/total.PNG' %}"></div>
+                            <div class="col">
+                                <p>The total no. of students in and out of campus will be shown on the homepage.<br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 25px;">
+                    <div class="col">
+                        <h1 style="font-size: 25px;">Advantages :</h1>
+                        <p>-No paperwork.<br></p>
+                        <p>-No waiting time.<br></p>
+                        <p>-Status (In/Out) will be known easily as filters are provided for searching the records.<br></p>
+                        <p>-Details of check-in and check-out can be maintained easily.<br></p>
+                        <p>-QR code process gives extra security.<br></p>
+                        <p>-Total students residing in college can be known easily and therefore food wastage can be reduced.<br></p>
+                        <p>-Easy maintenance and Retrieval of annual data.<br></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock content %}

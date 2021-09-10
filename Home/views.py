@@ -776,3 +776,6 @@ def contact_us(request):
 
 def accountdetails(request):
     return render(request,'Home/account_details.html')
+
+def use(request):
+    return render(request,'Home/how_to_use.html')

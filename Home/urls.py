@@ -44,6 +44,7 @@ urlpatterns = [
     path('HM_instructions/', views.HMinstructions, name='hminstructions'),
     path('securitylogin/',views.securitylogin,name='securitylogin'),
     path('securityhome/',views.securityhome,name='securityhome'),
+    path('how_to_use/',views.use,name= 'usage'),
     path('security_check/<str:pk>',views.securitycheck,name='securitycheck'),
     path('reset_password/', auth_views.PasswordResetView.as_view(template_name="Home/password_reset.html"),name="reset_password"),
     path('reset_password_sent/',auth_views.PasswordResetDoneView.as_view(template_name="Home/password_reset_sent.html"),name="password_reset_done"),
